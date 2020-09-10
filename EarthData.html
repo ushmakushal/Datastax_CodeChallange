@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="EarthData.css">
+	</head>
+	<body>
+		<div class="main">	
+			<div class="formContainer">
+				<div class="formContainer-heading">Provide information</div>
+				<form id="form" method="post">
+					<label for="lat">
+						<span>Latitude <span class="required">*</span></span>
+						<input id="inputLat" class="input-field" name="lat"  type="number" step="any" min="-90.0" max="90.0" value=""  required />
+					</label>
+					<label for="long">
+						<span>Longitude <span class="required">*</span></span>
+						<input id="inputLong" class="input-field" name="long" type="number" step="any" min="-180.0" max="180.0" value="" required />
+					</label>
+					<label for="dim">
+						<span>Dim </span>
+						<input id="inputDim" class="input-field" name="dim" type="number" step="any" value="" />
+					</label>
+					<label for="date">
+						<span>Date </span>
+						<input id="inputDate" class="input-field" name="date" type="date" value="" />
+					</label>
+					
+					<label>
+						<span> </span>
+						<input type="submit" value="Submit" />
+					</label>
+				</form>
+			</div>
+			<div id="imageContainer" class="imageContainer">
+				<div id="imgHeader" class="imageContainer-heading">Earth Image</div>
+				<div id="imgeInformation" class="imgeInformation">
+					<label>
+						<span>Date: </span>
+						<span id="imageDate"></span>
+					</label>
+					<label>
+						<span>Id: </span>
+						<span id="imageId"></span>
+					</label>
+					<label>
+						<span>Dataset: </span>
+						<span id="imageDataset"></span>
+					</label>
+					<label>
+						<span>Service Version: </span>
+						<span id="imageVersion"></span>
+					</label>
+					<label>
+						<span>Image Url: </span>
+						<span id="imageUrl"></span>
+					</label>
+				</div>
+				<img id="imgEarth" src="" alt="Image not available"/>
+			</div>
+		<div>
+		
+		<script src="EarthData.js"></script>
+	</body>
+</html>
